@@ -11,24 +11,24 @@ You should edit the "calculadora.txt" file with the calculations you'd like to p
 --- Syntaxe ---
 
 
-- Use + - * / ^ ( ) for the usual operations (no sqrt() functionality). Please note you should always put negative numbers between parenthesis;
+- Use + - * / ^ ( ) for the usual operations;
 
-- calc[] : Do calculations. **Example:**
+- calc[] : Does calculations. For square roots, use rational exponents. Please note you should always put negative numbers between parenthesis. **Example:**
 
 `calc[(-2)*(3+4/2)-(3^2)-1]`
 
 > Output: 
 >
->-17
+>-17.0
 
-- eq[] : Solve linear and quadratic equations. Use a, b and c for the parameters. **Example:**
+- eq[] : Solves linear and quadratic equations. Use a, b and c for the parameters. **Example:**
 
 `eq[2,4] # This corresponds to 2x+4=0 where a = 2 and b = 4` 
 > Output: 
 >
->x=-2
+>x=-2.0
 
-- graph[] : Graph a  basic function (sin(x); cos(x); exp(x); log(x); sqrt(x)). **Example:**
+- graph[] : Graphs a basic function (sin(x); cos(x); exp(x); log(x); sqrt(x)). **Example:**
 
 `graph[exp(x)]`
 
