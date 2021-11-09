@@ -11,15 +11,15 @@ You should edit the "calculadora.txt" file with the calculations you'd like to p
 --- Syntaxe ---
 
 
-- Use + - * / ^ ( ) for the usual operations (no sqrt() functionality);
+- Use + - * / ^ ( ) for the usual operations (no sqrt() functionality). Please note you should always put negative numbers between parenthesis;
 
 - calc[] : Do calculations. **Example:**
 
-`calc[2*(3+4/2)-(3^2)+1]`
+`calc[(-2)*(3+4/2)-(3^2)-1]`
 
 > Output: 
 >
->4
+>-17
 
 - eq[] : Solve linear and quadratic equations. Use a, b and c for the parameters. **Example:**
 
