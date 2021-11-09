@@ -6,7 +6,7 @@ It has a login menu, where you do your user and password registration to access 
 
 ### How to use the calculator
 
-You should edit the "calculadora.txt" file with the calculations you'd like to perform. Use one line for each order.
+You should edit the "calculadora.txt" file with the calculations you'd like to perform. Use one line for each order. The main program is "main.py".
 
 --- Syntaxe ---
 
