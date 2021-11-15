@@ -49,7 +49,31 @@ def menulogin(user):
     Logout ------------------- prima 'L' e enter\n\n").upper()
 
     if resposta1 == 'I':
-      yo()
+        print('''\n-> Para usar a calculadora deve escrever em cada linha um comando. Info...
+\n\n \
+    Calcular ----------------- escrever calc[<cálculos>]\n \
+    Equações 1º e 2º grau ---- escrever eq[a,b,c]\n \
+    Traçar gráfico ----------- escrever graph[<função_de_y>]\n\n
+Para informações mais detalhadas por favor consulte o README.md.\n''')
+        while True:
+            try:
+                num = int(input("\n-> Insira o número de comandos que deseja efetuar. Se deseja usar os comandos já escritos no ficheiro, prima '0'.\n"))
+        
+            
+                if(num != 0):
+                    print("\n-> Insira os comandos desejados (note que tem de inserir", num, "comandos).\n")
+                    f = open("calculadora.txt", "w+")
+                    for x in range(num):
+                
+                        f.write(input()+"\n")
+                    f.close()
+                
+                break
+    
+            except ValueError:
+                print("\n-> Por favor insira um número válido.")
+                continue
+        yo()
 
     elif resposta1 == 'M':
       mudarpass(user)

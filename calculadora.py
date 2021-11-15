@@ -6,17 +6,18 @@ import matplotlib.pyplot as plt
 import numpy as np
 import re
 
-
+resultadocalc = 0
 def calcular(vetordummy, lenght):
 
     print(vetordummy)
     
     if(vetordummy[0] == '-'):
        vetordummy[0] = str(-float(vetordummy[1]))
+       del vetordummy[1]
+       lenght = len(vetordummy)
        
-       print(vetordummy)
-       return(vetordummy[0])
-
+       
+    print(vetordummy)
     i=0
     while(i < lenght):
         if(vetordummy[i] == '^'):
@@ -56,13 +57,18 @@ def calcular(vetordummy, lenght):
             lenght = len(vetordummy)
             i -= 1
             
-        print(vetordummy)
+            
+        
             
             
         i += 1
     
-        
-        
+    print(vetordummy)   
+    global resultadocalc
+    
+    resultadocalc = float(vetordummy[0])
+    print(resultadocalc)
+    
     return(vetordummy[0])
         
 def calc(vetor):
@@ -70,8 +76,10 @@ def calc(vetor):
   teste = vetor
   
   del teste[0:2]
-  del teste[-2:-1]
-  print(teste[len(teste)-1])
+  #print(teste)
+  teste.pop()
+  print(teste)
+  #print(teste[len(teste)-1])
   
   print("A calcular...")
   print(teste)
@@ -94,11 +102,10 @@ def calc(vetor):
       i = len(teste)
     i -= 1
     lenght = 0
-                
-  print(calcular(teste, len(teste))   )         
-  resultado = calcular(teste, len(teste))
-  print("Resultado final:\n")
-  print(resultado)
+  
+  
+  calcular(teste, len(teste))
+  print("Resultado final:", resultadocalc, "\n")
 
 def eq(teste2):
 
@@ -203,9 +210,9 @@ def yo():
     for line in f:
         print("\n\n-> Linha ", i, "\n\n")
         if(re.split(r'([`\[\]])', line)[0] == 'calc'):
-            teste1 = re.split(r'([`\-=^&*()_+\[\]{};\'\\:"|,/])', line)
+            teste1 = re.split(r'([`\-=^&*()_+\[\]{};\'\\\:"|,/])', line)
             while '' in teste1: teste1.remove('')
-      
+            while '\n' in teste1: teste1.remove('\n')
             calc(teste1)
         if(re.split(r'([`\[\]])', line)[0] == 'eq'):
             teste2 = re.split(r'([`\=^&*()_+\[\]{};\'\\:"|,/])', line)
@@ -220,4 +227,3 @@ def yo():
 
 
     f.close()
-     
