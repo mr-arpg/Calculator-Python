@@ -11,27 +11,32 @@ You should edit the "calculadora.txt" file with the calculations you'd like to p
 --- Syntaxe ---
 
 
-- Use + - * / ^ ( ) for the usual operations (no sqrt() functionality);
+- Use + - * / ^ ( ) for the usual operations (no sqrt() functionality). To avoid possible errors, put negative numbers always between parentesis;
 
 - calc[] : Do calculations. **Example:**
 
-`calc[2*(3+4/2)-(3^2)+1]`
+`calc[2*((-3)+4/2)-(3^2)+1]`
 
-> Output: 
->
->4
+> Output:
+>  
+> (...)
+> Resultado final: -10.0
 
 - eq[] : Solve linear and quadratic equations. Use a, b and c for the parameters. **Example:**
 
 `eq[2,4] # This corresponds to 2x+4=0 where a = 2 and b = 4` 
-> Output: 
->
->x=-2
+> Output:
+>  
+> O resultado é:
+> x = -2
 
 - graph[] : Graph a  basic function (sin(x); cos(x); exp(x); log(x); sqrt(x)). **Example:**
 
 `graph[exp(x)]`
 
+> Output:
+>
+> (gráfico)
 > ![O gráfico de e^x](/Figure_1.png "Exponencial")
 
 ---
