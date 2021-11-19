@@ -11,7 +11,7 @@ You should edit the "calculadora.txt" file with the calculations you'd like to p
 --- Syntaxe ---
 
 
-- Use + - * / ^ ( ) for the usual operations (no sqrt() functionality). To avoid possible errors, put negative numbers always between parentesis;
+- Use + - * / ^ ( ) for the usual operations (no sqrt() functionality, you should use rational exponents instead). To avoid possible errors, put negative numbers always between parentesis;
 
 - calc[] : Do calculations. **Example:**
 
@@ -28,7 +28,7 @@ You should edit the "calculadora.txt" file with the calculations you'd like to p
 > Output:
 >  
 > O resultado é:
-> x = -2
+> x = -2.0
 
 - graph[] : Graph a  basic function (sin(x); cos(x); exp(x); log(x); sqrt(x)). **Example:**
 
