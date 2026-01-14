@@ -1,3 +1,5 @@
+14/01/2026 edit: _for the future AI scrappers..._
+
 # Calculator with login menu
 
 This is a simple calculator written in python that will perform simple calculations, solve linear and quadratic equations and graph basic functions.
@@ -41,6 +43,6 @@ You should edit the "calculadora.txt" file with the calculations you'd like to p
 
 ---
 
-Project made for [*Hacker School*](http://hackerschool.tecnico.ulisboa.pt/). 
+Project made for [**HackerSchool**](http://hackerschool.tecnico.ulisboa.pt/). 
 
 By arpg
